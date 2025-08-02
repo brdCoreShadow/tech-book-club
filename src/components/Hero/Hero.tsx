@@ -7,7 +7,7 @@ import avatarsIcon from "../../assets/images/image-avatars.webp";
 const Hero: React.FC = () => {
   return (
     <SC.HeroCon>
-      <div>
+      <SC.HeroContentCon>
         <SC.HeroTitle>Join the ultimate tech book club</SC.HeroTitle>
         <SC.HeroContent>
           Turn your reading time into learning time with fellow tech
@@ -15,12 +15,12 @@ const Hero: React.FC = () => {
           and level up your skills one chapter at a time.
         </SC.HeroContent>
         <SC.HeroBtn>review membership options</SC.HeroBtn>
-        <div>
-          <div>
+        <SC.AvatarsCon>
+          <SC.AvatarsThumb>
             <img src={avatarsIcon} alt="avatars" />
-          </div>
+          </SC.AvatarsThumb>
           <div>
-            <ul>
+            <SC.StarsList>
               <li>
                 <img src={starIcon} alt="star" />
               </li>
@@ -36,11 +36,11 @@ const Hero: React.FC = () => {
               <li>
                 <img src={starIcon} alt="star" />
               </li>
-            </ul>
-            <p>200+ developers joined already</p>
+            </SC.StarsList>
+            <SC.Attract>200+ developers joined already</SC.Attract>
           </div>
-        </div>
-      </div>
+        </SC.AvatarsCon>
+      </SC.HeroContentCon>
       <div>
         <img src={heroPicMob} alt="hero" />
       </div>

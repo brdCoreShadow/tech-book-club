@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 
-export const HeroCon = styled.div``;
+export const HeroCon = styled.div`
+margin-bottom: 144px;
+
+`;
 
 export const HeroTitle = styled.h3`
   margin-bottom: 24px;
@@ -73,3 +76,45 @@ export const HeroBtn = styled.button`
     background-size: contain;
   }
 `;
+
+export const HeroContentCon = styled.div`
+margin-bottom: 64px;
+`
+
+export const AvatarsCon = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const AvatarsThumb = styled.div`
+  margin-right: 12px;
+  & > img {
+    width: 110px;
+    height: 40px;
+  }
+`;
+
+export const StarsList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 4px;
+`;
+
+export const Attract = styled.p`
+font-family: "Mono";
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: -1px;
+
+color: #385159;
+`
+
+export const HeroPicThumb = styled.div`
+
+& > img{
+    width: 343px;
+}
+`
