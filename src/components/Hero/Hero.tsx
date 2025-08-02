@@ -41,9 +41,9 @@ const Hero: React.FC = () => {
           </div>
         </SC.AvatarsCon>
       </SC.HeroContentCon>
-      <div>
+      <SC.HeroPicThumb>
         <img src={heroPicMob} alt="hero" />
-      </div>
+      </SC.HeroPicThumb>
     </SC.HeroCon>
   );
 };

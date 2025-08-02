@@ -114,6 +114,9 @@ color: #385159;
 
 export const HeroPicThumb = styled.div`
 
+border-radius: 8px;
+overflow: hidden;
+
 & > img{
     width: 343px;
 }
