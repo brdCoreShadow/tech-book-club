@@ -1,8 +1,14 @@
 import * as SC from "./NotAverageStyled";
 
 import notAverageMob from "../../assets/images/image-not-average-mobile.webp";
+import notAverageTab from "../../assets/images/image-not-average-tablet.webp"
+import notAverageDesk from "../../assets/images/image-not-average-desktop.webp"
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 const NotAverage: React.FC = () => {
+
+const {isTablet, isDesktop} = useScreenSize()
+
   return (
     <SC.NotAverageCon>
       <SC.Title>
@@ -15,7 +21,7 @@ const NotAverage: React.FC = () => {
         applications.
       </SC.Content>
       <SC.PicThumb>
-        <img src={notAverageMob} alt="not average" />
+        <img src={isTablet ? notAverageTab : isDesktop ? notAverageDesk : notAverageMob} alt="not average" />
       </SC.PicThumb>
     </SC.NotAverageCon>
   );

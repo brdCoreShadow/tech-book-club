@@ -1,8 +1,15 @@
 import * as SC from "./ReadTogetherStyled";
 
+import { useScreenSize } from "@/hooks/useScreenSize";
+
 import readTogetherMob from "../../assets/images/image-read-together-mobile.webp";
+import readTogetherTablet from "../../assets/images/image-read-together-tablet.webp"
+import readTogehtherDesk from "../../assets/images/image-read-together-desktop.webp"
 
 const ReadTogether: React.FC = () => {
+
+const {isTablet, isDesktop} = useScreenSize()
+
   return (
     <SC.ReadTogetherCon>
       <div>
@@ -23,7 +30,7 @@ const ReadTogether: React.FC = () => {
         </SC.List>
       </div>
       <SC.PicThumb>
-        <img src={readTogetherMob} alt="read together" />
+        <img src={isTablet ? readTogetherTablet : isDesktop ? readTogehtherDesk : readTogetherMob} alt="read together" />
       </SC.PicThumb>
     </SC.ReadTogetherCon>
   );
