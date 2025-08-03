@@ -10,6 +10,12 @@ margin-bottom: 24px;
 padding-bottom: 64px;
 
 border-bottom: 1px solid #385159;
+
+@media (min-width: 768px){
+    justify-content: center;
+
+    margin-bottom: 64px;
+}
 `
 
 export const AvatarsThumb = styled.div`

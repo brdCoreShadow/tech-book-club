@@ -3,6 +3,10 @@ import styled from "@emotion/styled";
 export const MembershipCon = styled.div`
   margin-bottom: 64px;
 
+  @media (min-width: 768px){
+    margin-bottom: 80px;
+  }
+
   & > h3 {
     margin-bottom: 24px;
 
@@ -13,10 +17,23 @@ export const MembershipCon = styled.div`
     letter-spacing: -2px;
 
     color: #062630;
+
+    @media (min-width: 768px){
+        margin-bottom: 40px;
+
+        font-size: 50px;
+    }
   }
 `;
 
-export const MembershipListStyled = styled.ul``;
+export const MembershipListStyled = styled.ul`
+
+@media (min-width: 768px){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+`;
 
 export const Item = styled.li`
   padding-top: 24px;
@@ -29,6 +46,10 @@ export const Item = styled.li`
 
   &:not(:last-of-type) {
     margin-bottom: 24px;
+
+    @media (min-width: 768px){
+        margin-bottom: 0;
+    }
   }
 
   & > h3 {

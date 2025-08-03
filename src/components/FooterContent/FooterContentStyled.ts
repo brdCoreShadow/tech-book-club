@@ -15,6 +15,10 @@ export const MainCon = styled.div`
     letter-spacing: -2px;
 
     color: #faf5f3;
+
+    @media (min-width: 768px){
+        font-size: 50px;
+    }
   }
 
   & > button {
@@ -40,6 +44,10 @@ export const MainCon = styled.div`
 
     border: 1px solid #faf5f3;
     border-radius: 8px;
+
+    @media (min-width: 768px){
+        width: 50%;
+    }
 
     &:hover, &:active, &:focus{
         cursor: pointer;
