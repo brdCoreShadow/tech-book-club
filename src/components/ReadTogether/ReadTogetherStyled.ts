@@ -6,6 +6,15 @@ export const ReadTogetherCon = styled.div`
   @media (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 80px;
   }
+
+  @media (min-width: 1280px){
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: space-between;
+
+    margin-bottom: 120px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -81,6 +90,10 @@ export const PicThumb = styled.div`
 
     @media (min-width: 768px) and (max-width: 1279px) {
       min-width: 768px;
+    }
+
+    @media (min-width: 1280px){
+      width: 560px;
     }
   }
 `;

@@ -14,6 +14,10 @@ export const StarList = styled.ul`
   align-items: center;
 
   margin-bottom: 32px;
+
+  @media (min-width: 1280px){
+    justify-content: center;
+  }
 `;
 
 export const Content = styled.p`
@@ -32,6 +36,10 @@ export const Content = styled.p`
 
     font-size: 34px;
   }
+
+  @media (min-width: 1280px){
+    text-align: center;
+  }
 `;
 
 export const Author = styled.h3`
@@ -42,4 +50,8 @@ line-height: 1.4;
 letter-spacing: -0.5px;
 
 color: #385159;
+
+@media (min-width: 1280px){
+    text-align: center;
+}
 `

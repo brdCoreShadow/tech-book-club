@@ -1,11 +1,20 @@
 import styled from "@emotion/styled";
 
 export const HeroCon = styled.div`
-margin-bottom: 144px;
+  margin-bottom: 144px;
 
-@media (min-width: 768px) and (max-width:1279px){
+  @media (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 160px;
-}
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 134px;
+  }
 `;
 
 export const HeroTitle = styled.h3`
@@ -19,10 +28,9 @@ export const HeroTitle = styled.h3`
 
   color: #062630;
 
-  @media (min-width: 768px) and (max-width:1279px){
+  @media (min-width: 768px) and (max-width: 1279px) {
     font-size: 62px;
-
-}
+  }
 `;
 
 export const HeroContent = styled.p`
@@ -34,8 +42,6 @@ export const HeroContent = styled.p`
   letter-spacing: -0.5px;
 
   color: #385159;
-
-  
 `;
 
 export const HeroBtn = styled.button`
@@ -86,14 +92,35 @@ export const HeroBtn = styled.button`
     background-size: contain;
   }
 
-  @media (min-width: 768px) and (max-width:1279px){
+  @media (min-width: 768px) and (max-width: 1279px) {
     width: 50%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 380px;
+    transition: background 0.3s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
+
+      background: linear-gradient(#ffe2d1, #fff5ef);
+
+      transition: background 0.3s;
+    }
   }
 `;
 
 export const HeroContentCon = styled.div`
-margin-bottom: 64px;
-`
+  margin-bottom: 64px;
+
+  @media (min-width: 1280px) {
+    max-width: 40%;
+
+    margin-right: 64px;
+  }
+`;
 
 export const AvatarsCon = styled.div`
   display: flex;
@@ -118,25 +145,28 @@ export const StarsList = styled.ul`
 `;
 
 export const Attract = styled.p`
-font-family: "Mono";
-font-size: 14px;
-line-height: 1.2;
-letter-spacing: -1px;
+  font-family: "Mono";
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -1px;
 
-color: #385159;
-`
+  color: #385159;
+`;
 
 export const HeroPicThumb = styled.div`
+  border-radius: 8px;
+  overflow: hidden;
 
-border-radius: 8px;
-overflow: hidden;
-
-& > img{
+  & > img {
     min-width: 343px;
 
-    @media (min-width: 768px) and (max-width:1279px){
-        min-width: 769px;
-        max-width: 1279px;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      min-width: 769px;
+      max-width: 1279px;
     }
-}
-`
+
+    @media (min-width: 1280px) {
+      width: 540px;
+    }
+  }
+`;
