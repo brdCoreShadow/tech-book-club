@@ -1,10 +1,17 @@
 import * as SC from "./HeroStyled";
 
 import heroPicMob from "../../assets/images/image-hero-mobile.webp";
+import heroPicTab from "../../assets/images/image-hero-tablet.webp"
+import heroPicDesk from "../../assets/images/image-hero-desktop.webp"
+
 import starIcon from "../../assets/images/icon-star.svg";
 import avatarsIcon from "../../assets/images/image-avatars.webp";
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 const Hero: React.FC = () => {
+
+const {isTablet , isDesktop} = useScreenSize()
+
   return (
     <SC.HeroCon>
       <SC.HeroContentCon>
@@ -42,7 +49,7 @@ const Hero: React.FC = () => {
         </SC.AvatarsCon>
       </SC.HeroContentCon>
       <SC.HeroPicThumb>
-        <img src={heroPicMob} alt="hero" />
+        <img src={isTablet ? heroPicTab : isDesktop ? heroPicDesk : heroPicMob} alt="hero" />
       </SC.HeroPicThumb>
     </SC.HeroCon>
   );

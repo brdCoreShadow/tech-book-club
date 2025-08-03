@@ -2,6 +2,10 @@ import styled from "@emotion/styled";
 
 export const TestimonialCon = styled.div`
   margin-bottom: 64px;
+
+  @media (min-width: 768px){
+    margin-bottom: 80px;
+  }
 `;
 
 export const StarList = styled.ul`
@@ -22,6 +26,12 @@ export const Content = styled.p`
   letter-spacing: -1px;
 
   color: #062630;
+
+  @media (min-width: 768px){
+    margin-bottom: 32px;
+
+    font-size: 34px;
+  }
 `;
 
 export const Author = styled.h3`

@@ -4,6 +4,13 @@ export const MainCon = styled.div`
 
 text-align: center;
 
+@media (min-width: 768px){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 & > h3{
     margin-bottom: 16px;
 

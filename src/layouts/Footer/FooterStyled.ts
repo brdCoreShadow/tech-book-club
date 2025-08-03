@@ -10,4 +10,11 @@ background-color: #062630;
 
 border-top-right-radius: 8px;
 border-top-left-radius: 8px;
+
+@media (min-width: 768px){
+    padding-top: 64px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
 `

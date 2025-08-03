@@ -3,6 +3,9 @@ import styled from "@emotion/styled";
 export const HeroCon = styled.div`
 margin-bottom: 144px;
 
+@media (min-width: 768px) and (max-width:1279px){
+    margin-bottom: 160px;
+}
 `;
 
 export const HeroTitle = styled.h3`
@@ -15,6 +18,11 @@ export const HeroTitle = styled.h3`
   letter-spacing: -2px;
 
   color: #062630;
+
+  @media (min-width: 768px) and (max-width:1279px){
+    font-size: 62px;
+
+}
 `;
 
 export const HeroContent = styled.p`
@@ -26,6 +34,8 @@ export const HeroContent = styled.p`
   letter-spacing: -0.5px;
 
   color: #385159;
+
+  
 `;
 
 export const HeroBtn = styled.button`
@@ -75,6 +85,10 @@ export const HeroBtn = styled.button`
     background-position: center;
     background-size: contain;
   }
+
+  @media (min-width: 768px) and (max-width:1279px){
+    width: 50%;
+  }
 `;
 
 export const HeroContentCon = styled.div`
@@ -118,6 +132,11 @@ border-radius: 8px;
 overflow: hidden;
 
 & > img{
-    width: 343px;
+    min-width: 343px;
+
+    @media (min-width: 768px) and (max-width:1279px){
+        min-width: 769px;
+        max-width: 1279px;
+    }
 }
 `
