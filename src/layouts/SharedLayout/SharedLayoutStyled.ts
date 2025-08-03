@@ -8,4 +8,9 @@ padding-right: 16px;
    padding-left: 32px;
 padding-right: 32px;
 }
+
+@media (min-width: 1280px){
+    padding-left: auto;
+    padding-right: auto;
+}
 `

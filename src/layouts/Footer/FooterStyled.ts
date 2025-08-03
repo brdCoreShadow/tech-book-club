@@ -17,4 +17,10 @@ border-top-left-radius: 8px;
     padding-left: 32px;
     padding-right: 32px;
 }
+
+@media (min-width: 1280px){
+    padding-top: 80px;
+    padding-left: 136px;
+    padding-right: 136px;
+}
 `
